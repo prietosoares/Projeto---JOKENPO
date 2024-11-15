@@ -12,16 +12,20 @@
 
             <div class="buttons">
 
-                <button id="rock">🪨</button>
-                <button id="paper">&#x1F4C3;</button>
-                <button id="scissors">&#x2702;</button>
+                <button id="rock" onclick="playHuman('rock')">🪨</button>
+                <button id="paper"
+                    onclick="playHuman('paper')">&#x1F4C3;</button>
+                <button id="scissors"
+                    onclick="playHuman('scissors')">&#x2702;</button>
 
             </div>
 
             <p class="result"></p>
 
-            <p class="your-score">Sua Pontuação: <span>0</span></p>
-            <p class="machine-score">Pontuação da Máquina: <span>0</span></p>
+            <p class="your-score">Sua Pontuação: <span
+                    id="human-score">0</span></p>
+            <p class="machine-score">Pontuação da Máquina: <span
+                    id="machine-score">0</span></p>
 
         </div>
         <script src="./scripts.js"></script>
